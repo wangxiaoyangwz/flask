@@ -1,0 +1,9 @@
+{% maccro render_comment(comment) %}
+    <li>{{comment}}</li>
+{% endmaccro %}
+
+<ul>
+    {% for comment in comments %}
+        {{render_comment(comment)}}
+    {% endfor %}
+</ul>
